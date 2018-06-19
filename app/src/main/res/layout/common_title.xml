@@ -1,0 +1,45 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/distance_48"
+    android:background="@color/colorPrimary"
+    android:orientation="horizontal">
+
+
+    <LinearLayout
+        android:id="@+id/ll_back"
+        android:layout_width="@dimen/distance_48"
+        android:layout_height="@dimen/distance_48"
+        android:onClick="backClick"
+        android:gravity="left|center_vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/distance_8"
+            android:src="@drawable/common_bt_navbar_back" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/distance_16"
+        android:layout_weight="1"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxLines="1"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_18"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_right"
+        android:layout_width="@dimen/distance_48"
+        android:layout_height="@dimen/distance_48"
+        android:layout_marginRight="@dimen/distance_16"
+        android:layout_weight="0"
+        android:gravity="right|center_vertical"
+        android:textColor="@color/gray"
+        android:textSize="@dimen/text_16" />
+</LinearLayout>

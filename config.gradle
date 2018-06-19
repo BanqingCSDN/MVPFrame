@@ -1,0 +1,40 @@
+
+ext {
+    plugins = [
+            application      : 'com.android.application',
+            butterknife      : 'com.jakewharton.butterknife'
+    ]
+
+    android = [
+            applicationId    : "com.mvpframe",
+            compileSdkVersion: 25,
+            buildToolsVersion: "25.0.3",
+
+            minSdkVersion    : 14,
+            targetSdkVersion : 25,
+
+            versionCode      : 1,
+            versionName      : "1.0",
+
+            testInstrumentationRunner : "android.support.test.runner.AndroidJUnitRunner"
+    ]
+
+    bintray = [
+
+    ]
+
+    dependencies = [
+            appCompat            : 'com.android.support:appcompat-v7:25.3.1',
+            constraint           : 'com.android.support.constraint:constraint-layout:1.0.0-alpha7',
+            junit                : 'junit:junit:4.12',
+            glide                : 'com.github.bumptech.glide:glide:3.8.0',
+            okhttp3              : 'com.squareup.okhttp3:okhttp:3.8.1',
+            retrofit             : 'com.squareup.retrofit2:retrofit:2.3.0',
+            rxjava2              : 'com.squareup.retrofit2:adapter-rxjava2:2.3.0',
+            converter            : 'com.squareup.retrofit2:converter-scalars:2.1.0',
+            rxjava               : 'io.reactivex.rxjava2:rxjava:2.1.0',
+            okio                 : 'com.squareup.okio:okio:1.13.0',
+            butterknife          : 'com.jakewharton:butterknife:8.5.1',
+           // compiler             : 'com.jakewharton:butterknife-compiler:8.5.1',
+    ]
+}
